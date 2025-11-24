@@ -16,7 +16,7 @@ import snack.com.snack_backend.Repository.UsuarioRespository;
 public class UsuarioService {
     private final UsuarioRespository respository;
 
-    // Metodos que son Objetos Directos
+    // Metodos que son Objetos Directos 
     // Se usan cuando se crea, calcula, ver estados entre otras
     public UsuarioResponse CrearUsuario(UsuarioRequest req){
         if (respository.existsByEmail(req.getEmail())) {
